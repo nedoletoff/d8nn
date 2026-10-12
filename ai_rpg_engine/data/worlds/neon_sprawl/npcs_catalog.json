@@ -1,0 +1,68 @@
+{
+  "npcs": {
+    "fixer": {
+      "id": "fixer",
+      "name": "Фиксер",
+      "faction": "streets",
+      "description": "Улыбается, торгует информацией, помнит все долги.",
+      "disposition": "neutral",
+      "rep": 5,
+      "portrait": "(o_o)",
+      "location": "neon_market",
+      "hp": 12,
+      "max_hp": 12,
+      "ac": 12,
+      "stats": { "CHA": 3, "INT": 2 },
+      "unarmed_dice": "1d4",
+      "stock": ["stim", "cyberdeck", "monoblade"],
+      "shop": "Инфо и железо"
+    },
+    "ripperdoc": {
+      "id": "ripperdoc",
+      "name": "Риппердок",
+      "faction": "clinics",
+      "description": "Руки в масле, глаза — оптика. Ставит железо без вопросов.",
+      "disposition": "neutral",
+      "rep": 0,
+      "portrait": "[o_o]",
+      "location": "chrome_clinic",
+      "hp": 14,
+      "max_hp": 14,
+      "ac": 12,
+      "stats": { "INT": 3, "DEX": 2 },
+      "unarmed_dice": "1d4",
+      "stock": ["stim", "kevlar_jacket"],
+      "shop": "Клиника хрома"
+    },
+    "corp_agent": {
+      "id": "corp_agent",
+      "name": "Агент корпорации",
+      "faction": "corp",
+      "description": "Костюм без складки, улыбка без тепла.",
+      "disposition": "hostile",
+      "rep": -40,
+      "portrait": "|:^)",
+      "location": "data_spire",
+      "hp": 22,
+      "max_hp": 22,
+      "ac": 14,
+      "stats": { "DEX": 3, "INT": 3, "STR": 3 },
+      "unarmed_dice": "1d8"
+    },
+    "ganger": {
+      "id": "ganger",
+      "name": "Гангер",
+      "faction": "gangs",
+      "description": "Хром на пол-лица, дурные глаза и хороший нож.",
+      "disposition": "hostile",
+      "rep": -30,
+      "portrait": ">:-)",
+      "location": "sprawl_slums",
+      "hp": 16,
+      "max_hp": 16,
+      "ac": 12,
+      "stats": { "STR": 3, "DEX": 2 },
+      "unarmed_dice": "1d6"
+    }
+  }
+}

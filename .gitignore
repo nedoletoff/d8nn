@@ -1,0 +1,19 @@
+# Global ignores (ai_rpg_engine/.gitignore also applies to its subtree)
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Virtualenv
+.venv/
+venv/
+
+# Local secrets (runtime saves/logs are handled in ai_rpg_engine/.gitignore)
+.env
+**/.env
+
+# OS / editor
+.DS_Store
+*.swp

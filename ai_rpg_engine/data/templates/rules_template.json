@@ -1,0 +1,30 @@
+{
+  "lethality": "standard",
+  "max_hp_cap": 999,
+  "carry_base": 10,
+  "carry_per_str": 5,
+  "overload_dex_penalty": 2,
+  "death_threshold": 0,
+  "world_attitude": 0,
+  "encounter_rate": 1.0,
+  "laws": ["закон мира"],
+  "toggles": {
+    "death_enabled": true,
+    "encumbrance_enabled": true,
+    "encounters_enabled": true,
+    "magic_enabled": true,
+    "initiative_enabled": true
+  },
+  "capabilities": {
+    "may_describe_magic": true,
+    "may_kill": true,
+    "may_resurrect": false,
+    "may_invent_npcs": true,
+    "may_invent_locations": true,
+    "may_grant_items": false,
+    "may_time_skip": true,
+    "tone": "grimdark",
+    "violence": "graphic",
+    "language": "ru"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "quests": {
+    "chamber_secret": {
+      "id": "chamber_secret",
+      "title": "Тайна подземелья",
+      "description": "Кто-то (или что-то) открывает двери, которые должны быть заперты.",
+      "stages": ["hear_rumors", "find_entrance", "face_it"],
+      "rewards": {
+        "xp": 90,
+        "currency": { "gold": 0, "silver": 0, "copper": 0 },
+        "items": ["grimoire"]
+      }
+    }
+  }
+}

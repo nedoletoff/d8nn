@@ -1,0 +1,42 @@
+{
+  "items": {
+    "silver_sword": {
+      "id": "silver_sword",
+      "name": "Серебряный меч",
+      "type": "weapon",
+      "weight": 4.0,
+      "value": { "gold": 1, "silver": 0, "copper": 0 },
+      "description": "Серебро для нечисти, сталь для людей.",
+      "damage_dice": "1d10",
+      "damage_stat": "STR"
+    },
+    "witcher_armor": {
+      "id": "witcher_armor",
+      "name": "Доспех ведьмака",
+      "type": "armor",
+      "weight": 8.0,
+      "value": { "gold": 2, "silver": 0, "copper": 0 },
+      "description": "Кожух с пластинами, видал и когти, и клыки.",
+      "armor_bonus": 3
+    },
+    "swallow_potion": {
+      "id": "swallow_potion",
+      "name": "Зелье «Ласточка»",
+      "type": "consumable",
+      "weight": 0.5,
+      "value": { "gold": 0, "silver": 3, "copper": 0 },
+      "description": "Токсичная дрянь, но останавливает кровь.",
+      "effects": [
+        { "kind": "hp_delta", "target": "self", "value": 12 }
+      ]
+    },
+    "witcher_medallion": {
+      "id": "witcher_medallion",
+      "name": "Медальон ведьмака",
+      "type": "misc",
+      "weight": 0.2,
+      "value": { "gold": 0, "silver": 0, "copper": 0 },
+      "description": "Дрожит рядом с магией."
+    }
+  }
+}

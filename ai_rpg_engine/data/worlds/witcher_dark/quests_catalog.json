@@ -1,0 +1,15 @@
+{
+  "quests": {
+    "beast_of_drowned_village": {
+      "id": "beast_of_drowned_village",
+      "title": "Тварь из Утопшей деревни",
+      "description": "Староста платит серебром, если кто-то разберётся с тем, что живёт в колодце.",
+      "stages": ["find_tracks", "confront_beast", "collect_reward"],
+      "rewards": {
+        "xp": 120,
+        "currency": { "gold": 1, "silver": 5, "copper": 0 },
+        "items": ["swallow_potion"]
+      }
+    }
+  }
+}

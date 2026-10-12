@@ -1,0 +1,20 @@
+{
+  "spells": {
+    "aard": {
+      "id": "aard",
+      "name": "Аард",
+      "mp_cost": 2,
+      "damage_dice": "1d6",
+      "school": "sign",
+      "description": "Телекинетический удар, отбрасывает и оглушает."
+    },
+    "igni": {
+      "id": "igni",
+      "name": "Игни",
+      "mp_cost": 3,
+      "damage_dice": "2d6",
+      "school": "sign",
+      "description": "Струя пламени из ладони."
+    }
+  }
+}

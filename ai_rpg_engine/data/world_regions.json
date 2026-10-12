@@ -1,0 +1,77 @@
+{
+  "start": "wildwood_hamlet",
+  "locations": {
+    "underground_caves": {
+      "id": "underground_caves",
+      "name": "Пещеры",
+      "description": "Отсюда тянет холодом и минеральной водой.",
+      "coords": { "x": 0, "y": 0 },
+      "connections": ["black_marsh_sector_3"],
+      "danger_level": 5,
+      "encounters": ["deep_worm", "cave_horror"],
+      "npcs": [],
+      "region": "deep",
+      "terrain": "cave"
+    },
+    "ashen_ridge": {
+      "id": "ashen_ridge",
+      "name": "Пепельный хребет",
+      "description": "Серые зубцы скал, ветер несёт пепел.",
+      "coords": { "x": 1, "y": 0 },
+      "connections": ["suspension_bridge"],
+      "danger_level": 4,
+      "encounters": ["ash_wraith"],
+      "npcs": [],
+      "region": "deep",
+      "terrain": "mountain"
+    },
+    "black_marsh_sector_3": {
+      "id": "black_marsh_sector_3",
+      "name": "Серные Топи",
+      "description": "Туман ест сапоги. Внизу, сквозь мглу, блестит что-то.",
+      "coords": { "x": 0, "y": 1 },
+      "connections": ["wildwood_hamlet", "suspension_bridge", "underground_caves"],
+      "danger_level": 3,
+      "encounters": ["bog_lurker", "bandit_patrol"],
+      "npcs": ["rotten_vlad", "bobs"],
+      "region": "black_marsh",
+      "terrain": "marsh"
+    },
+    "suspension_bridge": {
+      "id": "suspension_bridge",
+      "name": "Мост",
+      "description": "Канаты скрипят над чёрной водой.",
+      "coords": { "x": 1, "y": 1 },
+      "connections": ["black_marsh_sector_3", "ashen_ridge"],
+      "danger_level": 2,
+      "encounters": ["rope_crawler"],
+      "npcs": [],
+      "region": "black_marsh",
+      "terrain": "bridge"
+    },
+    "wildwood_hamlet": {
+      "id": "wildwood_hamlet",
+      "name": "Подлесная",
+      "description": "Горстка домов на сваях среди чёрных сосен. Пахнет дымом и болотом.",
+      "coords": { "x": 0, "y": 2 },
+      "connections": ["black_marsh_sector_3", "wildwood_forest"],
+      "danger_level": 0,
+      "encounters": [],
+      "npcs": ["old_mira"],
+      "region": "wildwood",
+      "terrain": "village"
+    },
+    "wildwood_forest": {
+      "id": "wildwood_forest",
+      "name": "Чёрный лес",
+      "description": "Сосны стоят так плотно, что глушат звук.",
+      "coords": { "x": 1, "y": 2 },
+      "connections": ["wildwood_hamlet"],
+      "danger_level": 2,
+      "encounters": ["wolf_pack"],
+      "npcs": [],
+      "region": "wildwood",
+      "terrain": "forest"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "start": "shire_hamlet",
+  "locations": {
+    "shire_hamlet": {
+      "id": "shire_hamlet",
+      "name": "Уютная деревня",
+      "description": "Круглые двери, дым из труб, вторые завтраки. Здесь не ждут приключений.",
+      "coords": { "x": 0, "y": 0 },
+      "connections": ["old_forest", "river_town"],
+      "danger_level": 0,
+      "encounters": [],
+      "npcs": ["grey_wanderer"],
+      "region": "shire",
+      "terrain": "village"
+    },
+    "old_forest": {
+      "id": "old_forest",
+      "name": "Старый лес",
+      "description": "Тропа петляет; чем дальше, тем темнее и тише.",
+      "coords": { "x": 1, "y": 0 },
+      "connections": ["shire_hamlet", "troll_camp"],
+      "danger_level": 2,
+      "encounters": ["wolves", "spiders"],
+      "npcs": [],
+      "region": "wild",
+      "terrain": "forest"
+    },
+    "troll_camp": {
+      "id": "troll_camp",
+      "name": "Лагерь троллей",
+      "description": "Кости, котёл и запах, который лучше не описывать.",
+      "coords": { "x": 2, "y": 0 },
+      "connections": ["old_forest"],
+      "danger_level": 3,
+      "encounters": ["troll"],
+      "npcs": ["troll"],
+      "region": "wild",
+      "terrain": "ruin"
+    },
+    "misty_pass": {
+      "id": "misty_pass",
+      "name": "Туманный перевал",
+      "description": "Камни скользкие, ветер ревёт, а под снегом никого не видно.",
+      "coords": { "x": 1, "y": 1 },
+      "connections": ["old_forest", "lonely_mountain"],
+      "danger_level": 4,
+      "encounters": ["stone_giants"],
+      "npcs": [],
+      "region": "mountains",
+      "terrain": "mountain"
+    },
+    "lonely_mountain": {
+      "id": "lonely_mountain",
+      "name": "Одинокая Гора",
+      "description": "Врата открыты, из глубины тянет жаром и звоном золота.",
+      "coords": { "x": 1, "y": 2 },
+      "connections": ["misty_pass"],
+      "danger_level": 5,
+      "encounters": ["dragon"],
+      "npcs": [],
+      "region": "mountains",
+      "terrain": "mountain"
+    },
+    "river_town": {
+      "id": "river_town",
+      "name": "Город у реки",
+      "description": "Деревянные мостки, лодки, торговцы и сплетни.",
+      "coords": { "x": 0, "y": 2 },
+      "connections": ["shire_hamlet"],
+      "danger_level": 1,
+      "encounters": ["thieves"],
+      "npcs": [],
+      "region": "river",
+      "terrain": "water"
+    }
+  }
+}

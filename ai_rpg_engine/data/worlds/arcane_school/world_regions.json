@@ -1,0 +1,65 @@
+{
+  "start": "great_hall",
+  "locations": {
+    "great_hall": {
+      "id": "great_hall",
+      "name": "Большой зал",
+      "description": "Парящие свечи, длинные столы, гул голосов под каменным сводом.",
+      "coords": { "x": 0, "y": 0 },
+      "connections": ["forbidden_library", "greenhouses"],
+      "danger_level": 0,
+      "encounters": [],
+      "npcs": ["headmaster"],
+      "region": "academy",
+      "terrain": "school"
+    },
+    "forbidden_library": {
+      "id": "forbidden_library",
+      "name": "Запретная библиотека",
+      "description": "Книги шепчутся, если их не слушать. За решёткой — то, что лучше не читать.",
+      "coords": { "x": 1, "y": 0 },
+      "connections": ["great_hall", "astronomy_tower"],
+      "danger_level": 2,
+      "encounters": ["animated_book"],
+      "npcs": ["prefect"],
+      "region": "academy",
+      "terrain": "library"
+    },
+    "astronomy_tower": {
+      "id": "astronomy_tower",
+      "name": "Астрономическая башня",
+      "description": "Лестница крутится сама; с вершины видно всё поле и лес за ним.",
+      "coords": { "x": 2, "y": 0 },
+      "connections": ["forbidden_library"],
+      "danger_level": 1,
+      "encounters": [],
+      "npcs": [],
+      "region": "academy",
+      "terrain": "tower"
+    },
+    "greenhouses": {
+      "id": "greenhouses",
+      "name": "Оранжереи",
+      "description": "Пахнет землёй и мятой; некоторые растения смотрят в ответ.",
+      "coords": { "x": 0, "y": 1 },
+      "connections": ["great_hall", "dungeon_stairs"],
+      "danger_level": 1,
+      "encounters": ["snapping_plant"],
+      "npcs": ["rival"],
+      "region": "academy",
+      "terrain": "garden"
+    },
+    "dungeon_stairs": {
+      "id": "dungeon_stairs",
+      "name": "Подземелья",
+      "description": "Сырой камень, факелы гаснут сами, где-то капает вода.",
+      "coords": { "x": 1, "y": 1 },
+      "connections": ["greenhouses"],
+      "danger_level": 5,
+      "encounters": ["troll", "shadow"],
+      "npcs": ["troll"],
+      "region": "undercroft",
+      "terrain": "cave"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "items": {
+    "elven_dagger": {
+      "id": "elven_dagger",
+      "name": "Клинок «Жало»",
+      "type": "weapon",
+      "weight": 1.5,
+      "value": { "gold": 1, "silver": 0, "copper": 0 },
+      "description": "Светится синим, когда рядом орки.",
+      "damage_dice": "1d6",
+      "damage_stat": "DEX"
+    },
+    "short_sword": {
+      "id": "short_sword",
+      "name": "Короткий меч",
+      "type": "weapon",
+      "weight": 2.0,
+      "value": { "gold": 0, "silver": 2, "copper": 0 },
+      "description": "Простой, честный, из гномьей стали.",
+      "damage_dice": "1d8",
+      "damage_stat": "STR"
+    },
+    "mithril_shirt": {
+      "id": "mithril_shirt",
+      "name": "Мифриловая кольчужка",
+      "type": "armor",
+      "weight": 3.0,
+      "value": { "gold": 5, "silver": 0, "copper": 0 },
+      "description": "Легка, как рубаха, крепка, как скала.",
+      "armor_bonus": 4
+    },
+    "lembas": {
+      "id": "lembas",
+      "name": "Лембас",
+      "type": "consumable",
+      "weight": 0.2,
+      "value": { "gold": 0, "silver": 1, "copper": 0 },
+      "description": "Один кусок сытнее обеда.",
+      "effects": [
+        { "kind": "hp_delta", "target": "self", "value": 6 }
+      ]
+    }
+  }
+}

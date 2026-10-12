@@ -1,0 +1,110 @@
+{
+  "items": {
+    "heavy_axe": {
+      "id": "heavy_axe",
+      "name": "Тяжёлый топор",
+      "type": "weapon",
+      "weight": 6.0,
+      "value": { "gold": 0, "silver": 5, "copper": 0 },
+      "description": "Зазубренное железо на кривой рукояти.",
+      "damage_dice": "1d10",
+      "damage_stat": "STR"
+    },
+    "rusty_sword": {
+      "id": "rusty_sword",
+      "name": "Ржавый меч",
+      "type": "weapon",
+      "weight": 3.0,
+      "value": { "gold": 0, "silver": 1, "copper": 50 },
+      "description": "Ещё держит заточку. Пока что.",
+      "damage_dice": "1d8",
+      "damage_stat": "STR"
+    },
+    "dagger": {
+      "id": "dagger",
+      "name": "Кинжал",
+      "type": "weapon",
+      "weight": 1.0,
+      "value": { "gold": 0, "silver": 2, "copper": 0 },
+      "description": "Быстрый и тихий.",
+      "damage_dice": "1d4",
+      "damage_stat": "DEX"
+    },
+    "leather_armor": {
+      "id": "leather_armor",
+      "name": "Кожаный доспех",
+      "type": "armor",
+      "weight": 5.0,
+      "value": { "gold": 0, "silver": 4, "copper": 0 },
+      "description": "Просмоленная кожа, пахнет дымом.",
+      "armor_bonus": 2
+    },
+    "chain_mail": {
+      "id": "chain_mail",
+      "name": "Кольчуга",
+      "type": "armor",
+      "weight": 20.0,
+      "value": { "gold": 3, "silver": 0, "copper": 0 },
+      "description": "Тяжёлая, но надёжная.",
+      "armor_bonus": 5
+    },
+    "healing_potion": {
+      "id": "healing_potion",
+      "name": "Зелье лечения",
+      "type": "consumable",
+      "weight": 0.5,
+      "value": { "gold": 0, "silver": 2, "copper": 0 },
+      "description": "Мутная жидкость с металлическим привкусом.",
+      "effects": [
+        { "kind": "hp_delta", "target": "self", "value": 8 }
+      ]
+    },
+    "mana_tonic": {
+      "id": "mana_tonic",
+      "name": "Эфирный тоник",
+      "type": "consumable",
+      "weight": 0.5,
+      "value": { "gold": 0, "silver": 3, "copper": 0 },
+      "description": "Холодит горло и проясняет голову.",
+      "effects": [
+        { "kind": "mp_delta", "target": "self", "value": 5 }
+      ]
+    },
+    "antidote": {
+      "id": "antidote",
+      "name": "Противоядие",
+      "type": "consumable",
+      "weight": 0.3,
+      "value": { "gold": 0, "silver": 1, "copper": 50 },
+      "description": "Горькая настойка.",
+      "effects": [
+        { "kind": "status_remove", "target": "self", "value": "poisoned" }
+      ]
+    },
+    "sacred_water": {
+      "id": "sacred_water",
+      "name": "Освящённая вода",
+      "type": "quest",
+      "weight": 0.5,
+      "value": { "gold": 0, "silver": 0, "copper": 0 },
+      "description": "Светится в темноте. Источник этой воды нужно найти."
+    },
+    "arcane_tome": {
+      "id": "arcane_tome",
+      "name": "Гримуар искр",
+      "type": "spellbook",
+      "weight": 2.0,
+      "value": { "gold": 2, "silver": 0, "copper": 0 },
+      "description": "Страницы обожжены изнутри.",
+      "spell_id": "spark"
+    },
+    "torch": {
+      "id": "torch",
+      "name": "Факел",
+      "type": "misc",
+      "weight": 1.0,
+      "value": { "gold": 0, "silver": 0, "copper": 5 },
+      "description": "Светит недолго, но честно."
+    }
+  }
+}

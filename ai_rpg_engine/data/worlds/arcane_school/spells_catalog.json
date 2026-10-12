@@ -1,0 +1,28 @@
+{
+  "spells": {
+    "lumos": {
+      "id": "lumos",
+      "name": "Люмос",
+      "mp_cost": 1,
+      "damage_dice": "1d4",
+      "school": "light",
+      "description": "Свет на конце палочки; слепит и жжёт тварей."
+    },
+    "incendio": {
+      "id": "incendio",
+      "name": "Инсендио",
+      "mp_cost": 3,
+      "damage_dice": "2d6",
+      "school": "fire",
+      "description": "Струя огня, если не дрожит рука."
+    },
+    "expelliarmus": {
+      "id": "expelliarmus",
+      "name": "Экспеллиармус",
+      "mp_cost": 2,
+      "damage_dice": "1d6",
+      "school": "charm",
+      "description": "Выбивает палочку и сбивает с ног."
+    }
+  }
+}

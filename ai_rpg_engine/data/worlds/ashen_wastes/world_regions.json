@@ -1,0 +1,77 @@
+{
+  "start": "dust_town",
+  "locations": {
+    "dust_town": {
+      "id": "dust_town",
+      "name": "Городок Пыли",
+      "description": "Глинобитные стены, колодец под замком и стражники у каждых ворот.",
+      "coords": { "x": 0, "y": 0 },
+      "connections": ["bonefields", "slave_market"],
+      "danger_level": 1,
+      "encounters": ["thugs"],
+      "npcs": ["shopkeeper"],
+      "region": "frontier",
+      "terrain": "village"
+    },
+    "bonefields": {
+      "id": "bonefields",
+      "name": "Поля костей",
+      "description": "Ребра чего-то огромного торчат из песка, как мост без реки.",
+      "coords": { "x": 1, "y": 0 },
+      "connections": ["dust_town", "oasis_camp"],
+      "danger_level": 3,
+      "encounters": ["bone_dogs", "scavengers"],
+      "npcs": [],
+      "region": "wastes",
+      "terrain": "desert"
+    },
+    "oasis_camp": {
+      "id": "oasis_camp",
+      "name": "Оазис-стан",
+      "description": "Единственная вода на десятки лиг; кочевники берут плату и не торгуются.",
+      "coords": { "x": 2, "y": 0 },
+      "connections": ["bonefields"],
+      "danger_level": 2,
+      "encounters": ["nomads"],
+      "npcs": ["nomad_chief"],
+      "region": "wastes",
+      "terrain": "oasis"
+    },
+    "slave_market": {
+      "id": "slave_market",
+      "name": "Невольничий рынок",
+      "description": "Клетки, цепи, торговцы с хлыстами. Крики и цена на человека.",
+      "coords": { "x": 0, "y": 1 },
+      "connections": ["dust_town", "old_ruins"],
+      "danger_level": 3,
+      "encounters": ["slaver_guard"],
+      "npcs": ["slaver"],
+      "region": "frontier",
+      "terrain": "market"
+    },
+    "old_ruins": {
+      "id": "old_ruins",
+      "name": "Старые руины",
+      "description": "Обломки машин прошлого мира; техносектанты верят, что они ещё говорят.",
+      "coords": { "x": 1, "y": 1 },
+      "connections": ["slave_market", "deep_canyon"],
+      "danger_level": 4,
+      "encounters": ["tech_priest", "cannibals"],
+      "npcs": ["tech_priest"],
+      "region": "ruins",
+      "terrain": "ruin"
+    },
+    "deep_canyon": {
+      "id": "deep_canyon",
+      "name": "Глубокий каньон",
+      "description": "Ветер воет между стен; говорят, внизу живут те, кто ест людей.",
+      "coords": { "x": 2, "y": 1 },
+      "connections": ["old_ruins"],
+      "danger_level": 5,
+      "encounters": ["cannibals", "canyon_thing"],
+      "npcs": ["cannibal"],
+      "region": "wastes",
+      "terrain": "mountain"
+    }
+  }
+}

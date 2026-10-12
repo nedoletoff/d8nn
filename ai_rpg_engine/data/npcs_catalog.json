@@ -1,0 +1,53 @@
+{
+  "npcs": {
+    "old_mira": {
+      "id": "old_mira",
+      "name": "Старая Мира",
+      "faction": "village",
+      "description": "Сгорбленная травница с дымящейся трубкой.",
+      "disposition": "neutral",
+      "rep": 10,
+      "portrait": "(@_@)~",
+      "location": "wildwood_hamlet",
+      "hp": 6,
+      "max_hp": 6,
+      "ac": 10,
+      "stats": { "CHR": 2, "WIS": 3 },
+      "unarmed_dice": "1",
+      "stock": ["healing_potion", "antidote", "mana_tonic", "torch"],
+      "shop": "Травы Миры"
+    },
+    "rotten_vlad": {
+      "id": "rotten_vlad",
+      "name": "Рваный Влад",
+      "faction": "bandits",
+      "description": "Оскал, гнилые зубы и слишком много ножей.",
+      "disposition": "hostile",
+      "rep": -60,
+      "portrait": ">:-{",
+      "location": "black_marsh_sector_3",
+      "hp": 14,
+      "max_hp": 14,
+      "ac": 12,
+      "stats": { "STR": 3, "DEX": 1, "CHA": -1 },
+      "unarmed_dice": "1d6",
+      "stock": ["dagger", "rusty_sword", "torch"],
+      "shop": "Краденое"
+    },
+    "bobs": {
+      "id": "bobs",
+      "name": "Бобс",
+      "faction": "wilds",
+      "description": "Искрозуб — маленький дракон, искры сыпятся с чешуи.",
+      "disposition": "friendly",
+      "rep": 40,
+      "portrait": "(^~^)>@",
+      "location": "black_marsh_sector_3",
+      "hp": 18,
+      "max_hp": 18,
+      "ac": 13,
+      "stats": { "STR": 2, "DEX": 3, "MAG": 2 },
+      "unarmed_dice": "1d4"
+    }
+  }
+}

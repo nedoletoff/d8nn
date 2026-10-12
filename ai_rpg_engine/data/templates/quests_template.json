@@ -1,0 +1,15 @@
+{
+  "quests": {
+    "example_quest": {
+      "id": "example_quest",
+      "title": "Название задания",
+      "description": "О чём оно. Можно оставить пустым — завязку придумает рассказчик.",
+      "stages": ["stage_one", "stage_two"],
+      "rewards": {
+        "xp": 50,
+        "currency": { "gold": 0, "silver": 2, "copper": 0 },
+        "items": ["starter_potion"]
+      }
+    }
+  }
+}

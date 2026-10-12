@@ -1,0 +1,15 @@
+{
+  "quests": {
+    "there_and_back_again": {
+      "id": "there_and_back_again",
+      "title": "Туда и обратно",
+      "description": "Поход к Одинокой Горе — вернуть утраченное и остаться живым.",
+      "stages": ["leave_shire", "cross_pass", "reclaim_mountain"],
+      "rewards": {
+        "xp": 150,
+        "currency": { "gold": 2, "silver": 0, "copper": 0 },
+        "items": ["mithril_shirt"]
+      }
+    }
+  }
+}

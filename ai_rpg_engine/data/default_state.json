@@ -1,0 +1,155 @@
+{
+  "schema_version": 3,
+  "rng": {
+    "seed": null,
+    "counter": 0
+  },
+  "time": {
+    "day": 1,
+    "hour": 8,
+    "minute": 0
+  },
+  "player": {
+    "id": "player",
+    "name": "Стасян Горелый",
+    "kind": "player",
+    "level": 3,
+    "xp": 0,
+    "hp": 25,
+    "max_hp": 25,
+    "mp": 10,
+    "max_mp": 10,
+    "ac": 12,
+    "stats": {
+      "STR": 3,
+      "DEX": 1,
+      "INT": 2,
+      "WIS": 0,
+      "CHA": 1,
+      "LUK": 2
+    },
+    "statuses": [],
+    "equipped": {
+      "weapon": "inst_axe",
+      "armor": "inst_leather"
+    },
+    "inventory": [],
+    "currency": {
+      "gold": 0,
+      "silver": 6,
+      "copper": 32
+    },
+    "alive": true,
+    "permanently_dead": false
+  },
+  "party": [
+    {
+      "id": "bobs",
+      "name": "Бобс",
+      "kind": "companion",
+      "level": 2,
+      "xp": 0,
+      "hp": 18,
+      "max_hp": 18,
+      "mp": 4,
+      "max_mp": 4,
+      "ac": 13,
+      "stats": {
+        "STR": 2,
+        "DEX": 3,
+        "MAG": 2
+      },
+      "statuses": [],
+      "equipped": {},
+      "inventory": [],
+      "currency": {
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      },
+      "alive": true,
+      "permanently_dead": false
+    }
+  ],
+  "items": {
+    "inst_axe": {
+      "instance_id": "inst_axe",
+      "item_id": "heavy_axe",
+      "quantity": 1,
+      "charges": null
+    },
+    "inst_leather": {
+      "instance_id": "inst_leather",
+      "item_id": "leather_armor",
+      "quantity": 1,
+      "charges": null
+    }
+  },
+  "world": {
+    "locations": {
+      "wildwood_hamlet": {
+        "id": "wildwood_hamlet",
+        "discovered": true,
+        "visited": true
+      },
+      "black_marsh_sector_3": {
+        "id": "black_marsh_sector_3",
+        "discovered": true,
+        "visited": true
+      },
+      "suspension_bridge": {
+        "id": "suspension_bridge",
+        "discovered": false,
+        "visited": false
+      },
+      "underground_caves": {
+        "id": "underground_caves",
+        "discovered": false,
+        "visited": false
+      }
+    },
+    "current_location": "black_marsh_sector_3"
+  },
+  "quests": {
+    "sacred_spring": {
+      "id": "sacred_spring",
+      "stage": "reach_spring",
+      "status": "active",
+      "progress": {}
+    }
+  },
+  "npcs": {
+    "old_mira": {
+      "id": "old_mira",
+      "status": "alive",
+      "rep": 10,
+      "disposition": "neutral",
+      "dialogue_state": {},
+      "permanently_dead": false
+    }
+  },
+  "combat": null,
+  "crimes": {},
+  "investigations": {},
+  "flags": {},
+  "dm_settings": {
+    "fudge_dice": false,
+    "model": null
+  },
+  "rules": {
+    "name": "standard",
+    "max_hp_cap": 999,
+    "carry_base": 10,
+    "carry_per_str": 5,
+    "overload_dex_penalty": 2,
+    "death_threshold": 0,
+    "world_attitude": 0,
+    "encounter_rate": 1.0,
+    "lethality": "standard",
+    "laws": [],
+    "custom": {}
+  },
+  "game_over": false,
+  "active_branch": "canon_log.jsonl",
+  "canon_encoding_version": 1
+}

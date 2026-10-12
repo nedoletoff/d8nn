@@ -1,0 +1,20 @@
+{
+  "spells": {
+    "overload": {
+      "id": "overload",
+      "name": "Перегрузка",
+      "mp_cost": 2,
+      "damage_dice": "1d8",
+      "school": "program",
+      "description": "Боевая программа: жжёт системы и нервы цели."
+    },
+    "ice_pick": {
+      "id": "ice_pick",
+      "name": "Ледоруб",
+      "mp_cost": 1,
+      "damage_dice": "1d6",
+      "school": "program",
+      "description": "Быстрый взлом, сбивает защиту."
+    }
+  }
+}

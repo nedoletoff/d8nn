@@ -1,0 +1,28 @@
+{
+  "spells": {
+    "spark": {
+      "id": "spark",
+      "name": "Искра",
+      "mp_cost": 1,
+      "damage_dice": "1d6",
+      "school": "fire",
+      "description": "Мелкая вспышка огня."
+    },
+    "lightning_fire_burst": {
+      "id": "lightning_fire_burst",
+      "name": "Вспышка грозы и пламени",
+      "mp_cost": 3,
+      "damage_dice": "3d6",
+      "school": "storm",
+      "description": "Сигнатурный приём Искрозуба."
+    },
+    "heal": {
+      "id": "heal",
+      "name": "Малое исцеление",
+      "mp_cost": 4,
+      "damage_dice": null,
+      "school": "life",
+      "description": "Затягивает раны."
+    }
+  }
+}

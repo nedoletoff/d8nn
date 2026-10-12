@@ -1,0 +1,34 @@
+{
+  "items": {
+    "starter_blade": {
+      "id": "starter_blade",
+      "name": "Простой клинок",
+      "type": "weapon",
+      "weight": 2.0,
+      "value": { "gold": 0, "silver": 1, "copper": 0 },
+      "description": "Честная сталь без истории.",
+      "damage_dice": "1d8",
+      "damage_stat": "STR"
+    },
+    "starter_armor": {
+      "id": "starter_armor",
+      "name": "Простой доспех",
+      "type": "armor",
+      "weight": 4.0,
+      "value": { "gold": 0, "silver": 1, "copper": 0 },
+      "description": "Что было под рукой.",
+      "armor_bonus": 2
+    },
+    "starter_potion": {
+      "id": "starter_potion",
+      "name": "Зелье",
+      "type": "consumable",
+      "weight": 0.3,
+      "value": { "gold": 0, "silver": 1, "copper": 0 },
+      "description": "Восстанавливает силы.",
+      "effects": [
+        { "kind": "hp_delta", "target": "self", "value": 8 }
+      ]
+    }
+  }
+}

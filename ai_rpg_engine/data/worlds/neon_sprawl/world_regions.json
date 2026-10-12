@@ -1,0 +1,65 @@
+{
+  "start": "neon_market",
+  "locations": {
+    "neon_market": {
+      "id": "neon_market",
+      "name": "Неоновый рынок",
+      "description": "Мокрый асфальт, вывески на десятке языков, воздух пахнет маслом и лапшой.",
+      "coords": { "x": 0, "y": 0 },
+      "connections": ["chrome_clinic", "sprawl_slums"],
+      "danger_level": 1,
+      "encounters": ["pickpocket", "gang_patrol"],
+      "npcs": ["fixer"],
+      "region": "streets",
+      "terrain": "market"
+    },
+    "chrome_clinic": {
+      "id": "chrome_clinic",
+      "name": "Клиника хрома",
+      "description": "Риппердок обещает поставить что угодно, если у тебя есть деньги или глаза.",
+      "coords": { "x": 1, "y": 0 },
+      "connections": ["neon_market", "data_spire"],
+      "danger_level": 2,
+      "encounters": ["debt_collector"],
+      "npcs": ["ripperdoc"],
+      "region": "corp",
+      "terrain": "city"
+    },
+    "data_spire": {
+      "id": "data_spire",
+      "name": "Шпиль данных",
+      "description": "Башня корпорации уходит в облака; охрана вежливая и абсолютно безжалостная.",
+      "coords": { "x": 2, "y": 0 },
+      "connections": ["chrome_clinic", "server_vaults"],
+      "danger_level": 5,
+      "encounters": ["corp_security", "ice_guardian"],
+      "npcs": ["corp_agent"],
+      "region": "corp",
+      "terrain": "tower"
+    },
+    "sprawl_slums": {
+      "id": "sprawl_slums",
+      "name": "Трущобы",
+      "description": "Этажи-ульи, протянутые сети, чужие сны на продажу.",
+      "coords": { "x": 0, "y": 1 },
+      "connections": ["neon_market", "server_vaults"],
+      "danger_level": 3,
+      "encounters": ["gangers", "addict"],
+      "npcs": ["ganger"],
+      "region": "streets",
+      "terrain": "ruin"
+    },
+    "server_vaults": {
+      "id": "server_vaults",
+      "name": "Серверные своды",
+      "description": "Холод под городом, гудение стоек и лёд, который кусает.",
+      "coords": { "x": 1, "y": 1 },
+      "connections": ["sprawl_slums", "data_spire"],
+      "danger_level": 4,
+      "encounters": ["ice_guardian", "rogue_ai"],
+      "npcs": [],
+      "region": "underground",
+      "terrain": "cave"
+    }
+  }
+}

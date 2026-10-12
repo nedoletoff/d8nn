@@ -1,0 +1,12 @@
+{
+  "spells": {
+    "light_of_elbereth": {
+      "id": "light_of_elbereth",
+      "name": "Свет Эльберст",
+      "mp_cost": 2,
+      "damage_dice": "1d4",
+      "school": "light",
+      "description": "Бледное сияние, жгущее тварей тьмы."
+    }
+  }
+}

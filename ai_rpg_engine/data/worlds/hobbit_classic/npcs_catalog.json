@@ -1,0 +1,36 @@
+{
+  "npcs": {
+    "grey_wanderer": {
+      "id": "grey_wanderer",
+      "name": "Серый Странник",
+      "faction": "wanderers",
+      "description": "Сгорбленный старик с трубкой и хитрым прищуром.",
+      "disposition": "friendly",
+      "rep": 30,
+      "portrait": "(*_*)",
+      "location": "shire_hamlet",
+      "hp": 20,
+      "max_hp": 20,
+      "ac": 12,
+      "stats": { "INT": 4, "WIS": 3, "MAG": 4 },
+      "unarmed_dice": "1d4",
+      "stock": ["lembas"],
+      "shop": "Странник продаёт мелочи"
+    },
+    "troll": {
+      "id": "troll",
+      "name": "Тролль",
+      "faction": "monsters",
+      "description": "Огромный, глупый и очень голодный.",
+      "disposition": "hostile",
+      "rep": -90,
+      "portrait": ">:E",
+      "location": "troll_camp",
+      "hp": 30,
+      "max_hp": 30,
+      "ac": 11,
+      "stats": { "STR": 5, "DEX": 0 },
+      "unarmed_dice": "1d10"
+    }
+  }
+}

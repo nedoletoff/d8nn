@@ -1,0 +1,43 @@
+{
+  "items": {
+    "monoblade": {
+      "id": "monoblade",
+      "name": "Моноклинок",
+      "type": "weapon",
+      "weight": 1.5,
+      "value": { "gold": 1, "silver": 0, "copper": 0 },
+      "description": "Режет почти всё; почти.",
+      "damage_dice": "1d8",
+      "damage_stat": "DEX"
+    },
+    "kevlar_jacket": {
+      "id": "kevlar_jacket",
+      "name": "Кевларовая куртка",
+      "type": "armor",
+      "weight": 3.0,
+      "value": { "gold": 0, "silver": 5, "copper": 0 },
+      "description": "Потёртая, зато своя.",
+      "armor_bonus": 2
+    },
+    "stim": {
+      "id": "stim",
+      "name": "Стим",
+      "type": "consumable",
+      "weight": 0.2,
+      "value": { "gold": 0, "silver": 1, "copper": 0 },
+      "description": "Инжект; сердце барабанит, раны затягиваются.",
+      "effects": [
+        { "kind": "hp_delta", "target": "self", "value": 8 }
+      ]
+    },
+    "cyberdeck": {
+      "id": "cyberdeck",
+      "name": "Кибердека",
+      "type": "spellbook",
+      "weight": 1.0,
+      "value": { "gold": 2, "silver": 0, "copper": 0 },
+      "description": "Старый, но ещё держит лёд.",
+      "spell_id": "overload"
+    }
+  }
+}

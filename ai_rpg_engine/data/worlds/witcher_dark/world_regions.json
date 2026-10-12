@@ -1,0 +1,65 @@
+{
+  "start": "crossroads_inn",
+  "locations": {
+    "crossroads_inn": {
+      "id": "crossroads_inn",
+      "name": "Корчма на распутье",
+      "description": "Здесь пахнет кислым пивом и страхом. За стойкой шепчутся о контракте.",
+      "coords": { "x": 0, "y": 0 },
+      "connections": ["blighted_forest", "drowned_village"],
+      "danger_level": 0,
+      "encounters": [],
+      "npcs": ["wittold"],
+      "region": "road",
+      "terrain": "village"
+    },
+    "blighted_forest": {
+      "id": "blighted_forest",
+      "name": "Гнилой лес",
+      "description": "Деревья скрипят, будто говорят. Под корнями что-то шевелится.",
+      "coords": { "x": 1, "y": 0 },
+      "connections": ["crossroads_inn", "griffin_ridge"],
+      "danger_level": 3,
+      "encounters": ["rotfiend", "leshen"],
+      "npcs": [],
+      "region": "forest",
+      "terrain": "forest"
+    },
+    "griffin_ridge": {
+      "id": "griffin_ridge",
+      "name": "Грифонья гряда",
+      "description": "Гнездо на скале; ветер приносит запах падали.",
+      "coords": { "x": 2, "y": 0 },
+      "connections": ["blighted_forest"],
+      "danger_level": 4,
+      "encounters": ["griffin"],
+      "npcs": [],
+      "region": "hills",
+      "terrain": "mountain"
+    },
+    "drowned_village": {
+      "id": "drowned_village",
+      "name": "Утопшая деревня",
+      "description": "Дома стоят в чёрной воде. Из колодца не пахнет водой.",
+      "coords": { "x": 0, "y": 1 },
+      "connections": ["crossroads_inn", "swamp_grave"],
+      "danger_level": 3,
+      "encounters": ["drowners"],
+      "npcs": [],
+      "region": "swamp",
+      "terrain": "ruin"
+    },
+    "swamp_grave": {
+      "id": "swamp_grave",
+      "name": "Болотная могила",
+      "description": "Трясина принимает всё и не отдаёт обратно.",
+      "coords": { "x": 1, "y": 1 },
+      "connections": ["drowned_village"],
+      "danger_level": 5,
+      "encounters": ["drowned_hag"],
+      "npcs": ["drowned_hag"],
+      "region": "swamp",
+      "terrain": "marsh"
+    }
+  }
+}

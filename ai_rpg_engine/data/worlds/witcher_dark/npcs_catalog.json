@@ -1,0 +1,49 @@
+{
+  "npcs": {
+    "wittold": {
+      "id": "wittold",
+      "name": "Витольд из Ривии",
+      "faction": "witchers",
+      "description": "Белые волосы, жёлтые глаза, шрамы без счёта.",
+      "disposition": "friendly",
+      "rep": 20,
+      "portrait": "(o_o)",
+      "location": "crossroads_inn",
+      "hp": 30,
+      "max_hp": 30,
+      "ac": 14,
+      "stats": { "STR": 3, "DEX": 3, "WIS": 2 },
+      "unarmed_dice": "1d4"
+    },
+    "alderman": {
+      "id": "alderman",
+      "name": "Староста",
+      "faction": "nobles",
+      "description": "Жирный, потливый и очень осторожный в словах.",
+      "disposition": "neutral",
+      "rep": 0,
+      "portrait": "(-_-)",
+      "location": "crossroads_inn",
+      "hp": 10,
+      "max_hp": 10,
+      "ac": 10,
+      "stats": { "CHA": 2, "WIS": 1 },
+      "unarmed_dice": "1"
+    },
+    "drowned_hag": {
+      "id": "drowned_hag",
+      "name": "Утопшая карга",
+      "faction": "monsters",
+      "description": "Мокрые космы, слишком много суставов в руках.",
+      "disposition": "hostile",
+      "rep": -80,
+      "portrait": ">:{(",
+      "location": "swamp_grave",
+      "hp": 26,
+      "max_hp": 26,
+      "ac": 13,
+      "stats": { "STR": 4, "DEX": 2, "MAG": 3 },
+      "unarmed_dice": "1d8"
+    }
+  }
+}

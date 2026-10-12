@@ -1,0 +1,81 @@
+{
+  "npcs": {
+    "shopkeeper": {
+      "id": "shopkeeper",
+      "name": "Лавочник",
+      "faction": "frontier",
+      "description": "Считает монеты быстрее, чем ты успеваешь соврать.",
+      "disposition": "neutral",
+      "rep": 0,
+      "portrait": "(-_-)",
+      "location": "dust_town",
+      "hp": 10,
+      "max_hp": 10,
+      "ac": 10,
+      "stats": { "CHA": 2, "INT": 2 },
+      "unarmed_dice": "1",
+      "stock": ["medkit", "waterskin", "scrap_armor"],
+      "shop": "Всё для пустоши"
+    },
+    "slaver": {
+      "id": "slaver",
+      "name": "Работорговец",
+      "faction": "slavery",
+      "description": "Хлыст на поясе, улыбка торговая.",
+      "disposition": "hostile",
+      "rep": -50,
+      "portrait": ">:)",
+      "location": "slave_market",
+      "hp": 20,
+      "max_hp": 20,
+      "ac": 13,
+      "stats": { "STR": 3, "DEX": 2, "CHA": 2 },
+      "unarmed_dice": "1d6"
+    },
+    "nomad_chief": {
+      "id": "nomad_chief",
+      "name": "Вождь кочевников",
+      "faction": "nomads",
+      "description": "Смотрит как на скот, но воду честно продаёт.",
+      "disposition": "neutral",
+      "rep": 10,
+      "portrait": "(*_*)",
+      "location": "oasis_camp",
+      "hp": 24,
+      "max_hp": 24,
+      "ac": 14,
+      "stats": { "STR": 3, "DEX": 3, "WIS": 2 },
+      "unarmed_dice": "1d6"
+    },
+    "tech_priest": {
+      "id": "tech_priest",
+      "name": "Техносектант",
+      "faction": "cult",
+      "description": "Бормочет над мёртвой машиной, как над святыней.",
+      "disposition": "neutral",
+      "rep": -10,
+      "portrait": "[._.]",
+      "location": "old_ruins",
+      "hp": 14,
+      "max_hp": 14,
+      "ac": 12,
+      "stats": { "INT": 3, "WIS": 2 },
+      "unarmed_dice": "1d4"
+    },
+    "cannibal": {
+      "id": "cannibal",
+      "name": "Каннибал",
+      "faction": "wastes",
+      "description": "Улыбается слишком широко и слишком голодно.",
+      "disposition": "hostile",
+      "rep": -80,
+      "portrait": ">:{)",
+      "location": "deep_canyon",
+      "hp": 18,
+      "max_hp": 18,
+      "ac": 12,
+      "stats": { "STR": 4, "DEX": 2 },
+      "unarmed_dice": "1d8"
+    }
+  }
+}

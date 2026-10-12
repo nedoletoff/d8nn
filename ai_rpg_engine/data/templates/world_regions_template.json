@@ -1,0 +1,29 @@
+{
+  "start": "loc_start",
+  "locations": {
+    "loc_start": {
+      "id": "loc_start",
+      "name": "Стартовое место",
+      "description": "Откуда начинается игра.",
+      "coords": { "x": 0, "y": 0 },
+      "connections": ["loc_neighbor"],
+      "danger_level": 0,
+      "encounters": [],
+      "npcs": ["some_npc"],
+      "region": "region_id",
+      "terrain": "village"
+    },
+    "loc_neighbor": {
+      "id": "loc_neighbor",
+      "name": "Соседняя локация",
+      "description": "Куда ведёт дорога.",
+      "coords": { "x": 1, "y": 0 },
+      "connections": ["loc_start"],
+      "danger_level": 2,
+      "encounters": ["beast"],
+      "npcs": [],
+      "region": "region_id",
+      "terrain": "forest"
+    }
+  }
+}

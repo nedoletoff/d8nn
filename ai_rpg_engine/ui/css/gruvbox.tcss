@@ -1,0 +1,326 @@
+/*
+ * AI RPG Engine - Gruvbox Dark (Medium)
+ * All colors come from variables registered by ui/theme_gruvbox.py.
+ * No default terminal colors are used anywhere.
+ */
+
+Screen {
+    background: $bg;
+    color: $fg;
+    layout: vertical;
+}
+
+/* --- header ------------------------------------------------------------- */
+HeaderBar {
+    height: 2;
+    background: $bgdark;
+    color: $fgbright;
+    padding: 0 1;
+}
+
+HeaderBar .brand {
+    color: $yellow;
+    text-style: bold;
+}
+
+HeaderBar .meta {
+    color: $muted;
+}
+
+HeaderBar .saved {
+    color: $green;
+    text-style: bold;
+}
+
+HeaderBar .broken {
+    color: $red;
+    text-style: bold;
+}
+
+/* --- main body ---------------------------------------------------------- */
+#body {
+    layout: horizontal;
+    height: 1fr;
+}
+
+#sidebar {
+    width: 40;
+    min-width: 34;
+    height: 1fr;
+}
+
+#main {
+    width: 1fr;
+    height: 1fr;
+}
+
+/* --- panels ------------------------------------------------------------- */
+CharacterCard, PartyPanel, MapPanel, DialoguePanel, InventoryTab, QuestTab {
+    background: $panel;
+    border: round $surface;
+    padding: 0 1;
+    margin: 0 0 1 0;
+}
+
+CharacterCard:focus, PartyPanel:focus, MapPanel:focus,
+InventoryTab:focus, QuestTab:focus {
+    border: round $accent;
+}
+
+MapPanel {
+    min-height: 11;
+}
+
+.character-name {
+    color: $fgbright;
+    text-style: bold;
+}
+
+.stat {
+    color: $fg2;
+}
+
+.weapon {
+    color: $orange;
+}
+
+.armor {
+    color: $blue;
+}
+
+.currency {
+    color: $yellow;
+}
+
+.hp-high {
+    color: $green;
+}
+
+.hp-mid {
+    color: $yellow;
+}
+
+.hp-low {
+    color: $red;
+}
+
+.mana {
+    color: $blue;
+}
+
+.npc-dead {
+    color: $red;
+    text-style: dim;
+}
+
+.npc-friendly {
+    color: $green;
+}
+
+.npc-hostile {
+    color: $red;
+}
+
+/* --- location line moved into the header -------------------------------- */
+
+/* --- map ---------------------------------------------------------------- */MapPanel .current {
+    color: $orange;
+    text-style: bold;
+}
+
+/* --- narrative log ------------------------------------------------------ */
+NarrativeLog {
+    background: $panel;
+    border: round $surface;
+    padding: 0 1;
+    height: 1fr;
+}
+
+NarrativeLog Static {
+    background: transparent;
+    height: auto;
+}
+
+NarrativeLog .location {
+    color: $aqua;
+    text-style: bold;
+}
+
+NarrativeLog .gm {
+    color: $fg;
+}
+
+NarrativeLog .player {
+    color: $blue;
+}
+
+NarrativeLog .system {
+    color: $muted;
+}
+
+NarrativeLog .crime {
+    color: $red;
+}
+
+/* --- dice overlay ------------------------------------------------------- */
+DiceOverlay {
+    background: $panel;
+    border: round $purple;
+    padding: 0 1;
+    height: auto;
+}
+
+DiceOverlay .crit {
+    color: $purple;
+    text-style: bold;
+}
+
+DiceOverlay .pass {
+    color: $green;
+    text-style: bold;
+}
+
+DiceOverlay .fail {
+    color: $red;
+    text-style: bold;
+}
+
+/* --- inventory / quest tabs -------------------------------------------- */
+InventoryTab .overloaded {
+    color: $red;
+    text-style: bold;
+}
+
+QuestTab .active {
+    color: $yellow;
+}
+
+QuestTab .completed {
+    color: $green;
+    text-style: dim;
+}
+
+/* --- command bar -------------------------------------------------------- */
+CommandBar {
+    height: 3;
+    background: $bgdark;
+    border: round $surface;
+    padding: 0 1;
+}
+
+CommandBar:focus-within {
+    border: round $accent;
+}
+
+CommandBar Input {
+    background: $bg;
+    color: $fgbright;
+    border: none;
+}
+
+CommandBar Input:focus {
+    background: $bg;
+}
+
+/* --- setup wizard ------------------------------------------------------- */
+SetupScreen {
+    align: center middle;
+    background: $bg 70%;
+}
+
+#setup-root {
+    width: 96;
+    height: 95%;
+    background: $panel;
+    border: round $surface;
+    padding: 1 2;
+}
+
+#setup-title {
+    height: 1;
+    color: $yellow;
+    text-style: bold;
+    padding: 0 0 1 0;
+}
+
+TabbedContent {
+    height: 1fr;
+}
+
+TabPane {
+    padding: 0;
+}
+
+TabPane VerticalScroll {
+    height: 1fr;
+    padding: 1 0;
+}
+
+#stats-list {
+    height: auto;
+}
+
+.stat-row {
+    height: auto;
+}
+
+.stat-label {
+    width: 6;
+    color: $fg3;
+    padding: 1 0 0 0;
+}
+
+#stats-list .stat {
+    width: 8;
+    margin: 0 0 1 1;
+}
+
+.hint {
+    color: $fg4;
+}
+
+SetupScreen Input, SetupScreen Select, SetupScreen TextArea {
+    border: tall $surface;
+    margin: 0 0 1 0;
+}
+
+SetupScreen Input:focus, SetupScreen Select:focus, SetupScreen TextArea:focus {
+    border: tall $accent;
+}
+
+#world-desc {
+    height: 9;
+    border: round $surface;
+    background: $bg;
+    color: $fg2;
+    padding: 0 2;
+    margin: 1 0;
+}
+
+#char_status, #llm_status {
+    height: auto;
+    color: $fg4;
+    margin: 1 0;
+}
+
+#games-list {
+    height: 1fr;
+}
+
+#games-list Button {
+    width: 100%;
+    margin: 0 0 1 0;
+}
+
+#setup-buttons {
+    height: auto;
+    padding: 3 0 0 0;
+    align-horizontal: center;
+}
+
+#setup-buttons Button {
+    margin: 0 4;
+    min-width: 18;
+}
+
+/* --- footer removed: no command strip at the bottom --------------------- */

@@ -1,0 +1,12 @@
+{
+  "spells": {
+    "example_spell": {
+      "id": "example_spell",
+      "name": "Искра",
+      "mp_cost": 1,
+      "damage_dice": "1d6",
+      "school": "fire",
+      "description": "Что делает заклинание."
+    }
+  }
+}

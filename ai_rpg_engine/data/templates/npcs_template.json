@@ -1,0 +1,19 @@
+{
+  "npcs": {
+    "some_npc": {
+      "id": "some_npc",
+      "name": "Местный житель",
+      "faction": "locals",
+      "description": "Короткое описание характера и внешности.",
+      "disposition": "neutral",
+      "rep": 0,
+      "portrait": "(-_-)",
+      "location": "loc_start",
+      "hp": 10,
+      "max_hp": 10,
+      "ac": 10,
+      "stats": { "WIS": 1, "CHA": 1 },
+      "unarmed_dice": "1d4"
+    }
+  }
+}

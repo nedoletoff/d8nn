@@ -1,0 +1,64 @@
+{
+  "npcs": {
+    "headmaster": {
+      "id": "headmaster",
+      "name": "Директор",
+      "faction": "faculty",
+      "description": "Длинная борода, очки на кончике носа, видит насквозь.",
+      "disposition": "friendly",
+      "rep": 25,
+      "portrait": "(*_*)",
+      "location": "great_hall",
+      "hp": 18,
+      "max_hp": 18,
+      "ac": 12,
+      "stats": { "INT": 5, "WIS": 4, "MAG": 5 },
+      "unarmed_dice": "1d4"
+    },
+    "prefect": {
+      "id": "prefect",
+      "name": "Старший староста",
+      "faction": "faculty",
+      "description": "Идеальная осанка и вечное неодобрение.",
+      "disposition": "neutral",
+      "rep": 5,
+      "portrait": "(-_-)",
+      "location": "forbidden_library",
+      "hp": 14,
+      "max_hp": 14,
+      "ac": 11,
+      "stats": { "INT": 3, "WIS": 3 },
+      "unarmed_dice": "1d6"
+    },
+    "rival": {
+      "id": "rival",
+      "name": "Соперник",
+      "faction": "students",
+      "description": "Улыбается ровно настолько, чтобы это бесило.",
+      "disposition": "hostile",
+      "rep": -20,
+      "portrait": ":->",
+      "location": "greenhouses",
+      "hp": 16,
+      "max_hp": 16,
+      "ac": 10,
+      "stats": { "INT": 3, "CHA": 2, "MAG": 3 },
+      "unarmed_dice": "1d4"
+    },
+    "troll": {
+      "id": "troll",
+      "name": "Подземельный тролль",
+      "faction": "monsters",
+      "description": "Он в подземельях не первый год. И не первый тролль.",
+      "disposition": "hostile",
+      "rep": -70,
+      "portrait": ">:E",
+      "location": "dungeon_stairs",
+      "hp": 28,
+      "max_hp": 28,
+      "ac": 12,
+      "stats": { "STR": 5, "DEX": 0 },
+      "unarmed_dice": "1d10"
+    }
+  }
+}

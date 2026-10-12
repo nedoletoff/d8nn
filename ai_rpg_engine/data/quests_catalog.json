@@ -1,0 +1,26 @@
+{
+  "quests": {
+    "sacred_spring": {
+      "id": "sacred_spring",
+      "title": "Священный источник",
+      "description": "Где-то в топях бьёт источник освящённой воды. Мира просит принести немного.",
+      "stages": ["reach_spring", "cleanse_spring", "return"],
+      "rewards": {
+        "xp": 50,
+        "currency": { "gold": 0, "silver": 5, "copper": 0 },
+        "items": ["healing_potion"]
+      }
+    },
+    "cull_the_marsh": {
+      "id": "cull_the_marsh",
+      "title": "Проредить топь",
+      "description": "Рваный Влад и его шайка держат болото в страхе.",
+      "stages": ["find_vlad", "confront_vlad"],
+      "rewards": {
+        "xp": 80,
+        "currency": { "gold": 1, "silver": 0, "copper": 0 },
+        "items": ["dagger"]
+      }
+    }
+  }
+}
