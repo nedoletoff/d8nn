@@ -1,5 +1,3 @@
-# Global ignores (ai_rpg_engine/.gitignore also applies to its subtree)
-
 # Python
 __pycache__/
 *.py[cod]
@@ -10,9 +8,14 @@ __pycache__/
 .venv/
 venv/
 
-# Local secrets (runtime saves/logs are handled in ai_rpg_engine/.gitignore)
+# Local secrets
 .env
-**/.env
+
+# Runtime data (saves/logs are per-user, not source)
+saves/*
+!saves/.gitkeep
+logs/*
+!logs/.gitkeep
 
 # OS / editor
 .DS_Store

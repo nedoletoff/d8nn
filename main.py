@@ -105,7 +105,7 @@ def _launch_tui(settings: object, *, slot: str | None = None) -> int:
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        prog="ai_rpg_engine",
+        prog="d8nn",
         description="Deterministic tabletop RPG sandbox with an AI narrator.",
     )
     parser.add_argument(
